@@ -1,0 +1,50 @@
+{
+  "name": "system-coverage",
+  "version": "1.0.0",
+  "main": "config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel": "^5.8.23",
+    "babelify": "^6.4.0",
+    "browserify": "^11.2.0",
+    "browserify-istanbul": "^0.2.1",
+    "es6-module-loader": "^0.17.8",
+    "gulp": "^3.9.0",
+    "istanbul": "^0.3.17",
+    "jasmine": "^2.3.2",
+    "jspm": "^0.16.13",
+    "karma": "^0.13.14",
+    "karma-browserify": "^4.4.0",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-commonjs": "^0.0.13",
+    "karma-coverage": "^0.5.3",
+    "karma-jspm": "^2.0.1",
+    "karma-mocha": "^0.2.0",
+    "karma-sinon-chai": "^1.1.0",
+    "karma-systemjs": "^0.8.1",
+    "react": "^0.13.3",
+    "systemjs": "^0.19.5",
+    "systemjs-builder": "^0.14.9",
+    "traceur": "^0.0.92",
+    "tsify": "^0.12.2",
+    "typescript": "^1.6.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bnolan/babel-coverage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bnolan/babel-coverage/issues"
+  },
+  "homepage": "https://github.com/bnolan/babel-coverage#readme"
+}
