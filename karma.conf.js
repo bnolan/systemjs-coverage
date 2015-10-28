@@ -25,6 +25,7 @@ module.exports = function (config) {
     // logLevel: config.LOG_DEBUG,
     // autoWatch: false,
 
-    browsers: ['Chrome']
+    browsers: ['Chrome'],
+    singleRun: true
   });
 };

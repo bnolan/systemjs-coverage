@@ -12,7 +12,7 @@
     "browserify-istanbul": "^0.2.1",
     "es6-module-loader": "^0.17.8",
     "gulp": "^3.9.0",
-    "istanbul": "^0.3.17",
+    "istanbul": "git://github.com/gotwarlost/istanbul.git#source-map",
     "jasmine": "^2.3.2",
     "jasmine-core": "^2.3.4",
     "jspm": "^0.16.13",
