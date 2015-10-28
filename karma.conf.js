@@ -11,10 +11,9 @@ module.exports = function (config) {
       './build/build.js': ['coverage']
     },
 
-    // plugins: ['karma-systemjs'],
     basePath: '',
 
-    frameworks: ['systemjs', 'jasmine'],
+    frameworks: ['jasmine'],
 
     files: [
       './build/build.js'

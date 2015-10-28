@@ -1,13 +1,16 @@
 System.config({
-  baseURL: '.',
   defaultJSExtensions: false,
   transpiler: 'typescript',
   typescriptOptions: {
     'noImplicitAny': false,
     'typeCheck': true,
-    'tsconfig': true,
-    'target': 'ES6'
+    'tsconfig': true
   },
+  // packages: {
+  //   'app': {
+  //     'defaultExtension': 'ts'
+  //   }
+  // },
   map: {
     'typescript': 'node_modules/typescript/lib/typescript.js',
     'systemjs': 'node_modules/systemjs/dist/system.js',

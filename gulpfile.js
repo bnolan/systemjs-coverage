@@ -7,7 +7,10 @@ gulp.task('default', function (cb) {
 
   builder.loadConfig('./config.js')
     .then(function () {
-      return builder.build('test/test.ts', 'build/build.js');
+      return builder.buildStatic('test/test.ts', 'build/build.js', {
+        runtime: false,
+        sourceMaps: true
+      });
     })
     .then(function () {
       console.log('Build complete');

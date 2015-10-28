@@ -16,7 +16,7 @@
     "jasmine": "^2.3.2",
     "jasmine-core": "^2.3.4",
     "jspm": "^0.16.13",
-    "karma": "^0.12.31",
+    "karma": "^0.12.37",
     "karma-browserify": "^4.4.0",
     "karma-chrome-launcher": "^0.2.1",
     "karma-commonjs": "^0.0.13",
