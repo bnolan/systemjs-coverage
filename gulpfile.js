@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-gulp.task('bundle', function (cb) {
+gulp.task('default', function (cb) {
   var Builder = require('systemjs-builder');
   var builder = new Builder();
   builder.reset();

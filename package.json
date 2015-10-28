@@ -14,17 +14,21 @@
     "gulp": "^3.9.0",
     "istanbul": "^0.3.17",
     "jasmine": "^2.3.2",
+    "jasmine-core": "^2.3.4",
     "jspm": "^0.16.13",
-    "karma": "^0.13.14",
+    "karma": "^0.12.31",
     "karma-browserify": "^4.4.0",
     "karma-chrome-launcher": "^0.2.1",
     "karma-commonjs": "^0.0.13",
     "karma-coverage": "^0.5.3",
+    "karma-jasmine": "^0.3.6",
     "karma-jspm": "^2.0.1",
     "karma-mocha": "^0.2.0",
     "karma-sinon-chai": "^1.1.0",
     "karma-systemjs": "^0.8.1",
+    "mocha": "^2.3.3",
     "react": "^0.13.3",
+    "sinon": "^1.17.2",
     "systemjs": "^0.19.5",
     "systemjs-builder": "^0.14.9",
     "traceur": "^0.0.92",
@@ -32,6 +36,8 @@
     "typescript": "^1.6.2"
   },
   "devDependencies": {
+    "karma-mocha": "^0.2.0",
+    "karma-systemjs": "^0.8.1",
     "mocha": "^2.3.3"
   },
   "scripts": {

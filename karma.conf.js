@@ -11,18 +11,21 @@ module.exports = function (config) {
       './build/build.js': ['coverage']
     },
 
-    plugins: ['karma-systemjs'],
+    // plugins: ['karma-systemjs'],
     basePath: '',
-    frameworks: ['mocha', 'sinon-chai', 'karma-systemjs'],
+
+    frameworks: ['systemjs', 'jasmine'],
+
     files: [
       './build/build.js'
     ],
+
     reporters: ['progress', 'coverage'],
     // port: 9876,
     // colors: true,
     // logLevel: config.LOG_DEBUG,
     // autoWatch: false,
-    browsers: ['Chrome'],
-    singleRun: true
+
+    browsers: ['Chrome']
   });
 };
