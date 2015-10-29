@@ -1,7 +1,7 @@
 var gulp = require('gulp');
+var Builder = require('systemjs-builder');
 
 gulp.task('default', function (cb) {
-  var Builder = require('systemjs-builder');
   var builder = new Builder();
   builder.reset();
 
