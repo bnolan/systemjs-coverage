@@ -4,7 +4,7 @@ import TSModule from './tsmodule';
 
 describe('my test suite', () => {
   it('does something', () => {
-    let t: any = new TSModule;
+    let t = new TSModule;
     expect(t.getText()).toEqual('boop');
   });
 

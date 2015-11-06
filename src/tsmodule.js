@@ -1,11 +1,11 @@
 export default class TsModule {
-    getDefaultProps(): any {
+    getDefaultProps() {
         return {
             text: 'boop'
         };
     }
 
-    getText(): string {
+    getText() {
         if (true) {
             return this.render();
         }
@@ -14,7 +14,7 @@ export default class TsModule {
         return 'no';
     }
 
-    render(): string {
+    render() {
         return this.getDefaultProps().text;
     }
 }

@@ -9,7 +9,7 @@ gulp.task('default', function (cb) {
 
   builder.loadConfig('./config.js')
     .then(function () {
-      return builder.bundle('src/test.ts', {
+      return builder.bundle('src/test', {
         sourceMaps: true
       });
     })
