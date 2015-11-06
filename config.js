@@ -1,9 +1,14 @@
 System.config({
-  // transpiler: 'babel',
+  transpiler: 'typescript',
+
   packages: {
     'src': {
-      'defaultExtension': 'js'
+      'defaultExtension': 'ts'
     }
+  },
+
+  map: {
+    'typescript': 'node_modules/typescript/lib/typescript.js'
   }
   // map: {
   //   'babel': 'node_modules/babel-core/lib/api/browser.js',
