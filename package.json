@@ -6,13 +6,8 @@
     "test": "test"
   },
   "dependencies": {
-    "babel": "^5.8.23",
-    "babelify": "^6.4.0",
-    "browserify": "^11.2.0",
-    "browserify-istanbul": "^0.2.1",
     "es6-module-loader": "^0.17.8",
     "gulp": "^3.9.0",
-    "istanbul": "git://github.com/gotwarlost/istanbul.git#source-map",
     "jasmine": "^2.3.2",
     "jasmine-core": "^2.3.4",
     "jspm": "^0.16.13",
@@ -28,20 +23,14 @@
     "karma-systemjs": "^0.8.1",
     "mocha": "^2.3.3",
     "react": "^0.13.3",
+    "remap-istanbul": "^0.3.1",
     "sinon": "^1.17.2",
     "systemjs": "^0.19.5",
-    "systemjs-builder": "^0.14.9",
-    "traceur": "^0.0.92",
-    "tsify": "^0.12.2",
+    "systemjs-builder": "^0.14.10",
     "typescript": "^1.6.2"
   },
-  "devDependencies": {
-    "karma-mocha": "^0.2.0",
-    "karma-systemjs": "^0.8.1",
-    "mocha": "^2.3.3"
-  },
   "scripts": {
-    "test": "mocha"
+    "test": "gulp && karma start"
   },
   "repository": {
     "type": "git",

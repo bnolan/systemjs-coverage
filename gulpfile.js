@@ -1,23 +1,20 @@
+// && ./node_modules/.bin/remap-istanbul -i ./coverage/coverage-final.json -o ./coverage/html-report -t html"
+
+var Builder = require('systemjs-builder');
 var gulp = require('gulp');
 
 gulp.task('default', function (cb) {
-  var Builder = require('systemjs-builder');
   var builder = new Builder();
-  builder.reset();
 
   builder.loadConfig('./config.js')
     .then(function () {
-      return builder.buildStatic('test/test.ts', 'build/build.js', {
-        runtime: false,
+      return builder.buildStatic('src/test.ts', {
         sourceMaps: true
       });
     })
-    .then(function () {
+    .then(function (output) {
+      console.log(output);
       console.log('Build complete');
       cb();
     })
-    .catch(function (err) {
-      console.log(err);
-      cb(err);
-    });
 });

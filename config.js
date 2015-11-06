@@ -4,13 +4,14 @@ System.config({
   typescriptOptions: {
     'noImplicitAny': false,
     'typeCheck': true,
-    'tsconfig': true
+    'tsconfig': true,
+    'sourceMap': true
   },
-  // packages: {
-  //   'app': {
-  //     'defaultExtension': 'ts'
-  //   }
-  // },
+  packages: {
+    'src': {
+      'defaultExtension': 'ts'
+    }
+  },
   map: {
     'typescript': 'node_modules/typescript/lib/typescript.js',
     'systemjs': 'node_modules/systemjs/dist/system.js',

@@ -1,17 +1,18 @@
 module.exports = function (config) {
   config.set({
     coverageReporter: {
-      reporters: [
-          { type: 'html' },
-          { type: 'text-summary' }
-      ]
+      reporters: ['text', 'html']
     },
+    
+    // {
+    //   type : 'json',
+    //   subdir : '.',
+    //   file : 'coverage-final.json'
+    // },
 
     preprocessors: {
       './build/build.js': ['coverage']
     },
-
-    basePath: '',
 
     frameworks: ['jasmine'],
 
@@ -19,13 +20,10 @@ module.exports = function (config) {
       './build/build.js'
     ],
 
-    reporters: ['progress', 'coverage'],
-    // port: 9876,
-    // colors: true,
-    // logLevel: config.LOG_DEBUG,
-    // autoWatch: false,
+    reporters: ['coverage'],
 
     browsers: ['Chrome'],
+
     singleRun: true
   });
 };

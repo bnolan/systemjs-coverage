@@ -1,8 +1,6 @@
 /// <reference path="../typings/tsd.d.ts" />
 
-'use strict';
-
-import TSModule from '../src/tsmodule.ts';
+import TSModule from './tsmodule';
 
 describe('my test suite', () => {
   it('does something', () => {

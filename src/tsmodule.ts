@@ -1,5 +1,3 @@
-'use strict';
-
 export default class TsModule {
     getDefaultProps(): any {
         return {
