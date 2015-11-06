@@ -1,10 +1,6 @@
 System.config({
-  defaultJSExtensions: false,
   transpiler: 'typescript',
   typescriptOptions: {
-    'noImplicitAny': false,
-    'typeCheck': true,
-    'tsconfig': true,
     'sourceMap': true
   },
   packages: {

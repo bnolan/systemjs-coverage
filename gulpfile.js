@@ -9,12 +9,13 @@ gulp.task('default', function (cb) {
 
   builder.loadConfig('./config.js')
     .then(function () {
-      return builder.buildStatic('src/test.ts', {
+      return builder.bundle('src/test.ts', {
         sourceMaps: true
       });
     })
     .then(function (output) {
-      console.log(output);
+      console.log(output.source);
+      console.log(output.sourceMap);
       console.log('Build complete');
       cb();
     })
